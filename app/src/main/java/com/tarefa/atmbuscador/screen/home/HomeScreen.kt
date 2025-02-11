@@ -24,7 +24,7 @@ import com.tarefa.atmbuscador.componentes.TopBar
 @Composable
 fun HomeScreen(navController: NavController) {
     Scaffold(
-        topBar = { TopBar(title = "ATM 2") },
+        topBar = { TopBar(title = "ATM B") },
         bottomBar = { BottomNavigationBar(navController) }
     ) { paddingValues ->
         Column(
@@ -109,3 +109,4 @@ fun HomeScreenPreview() {
     val fakeNavController = rememberNavController()
     HomeScreen(fakeNavController) // 🔹 Passa um NavController fake para o Preview funcionar
 }
+
